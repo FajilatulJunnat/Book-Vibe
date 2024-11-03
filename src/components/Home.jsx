@@ -1,6 +1,6 @@
 import React from 'react';
-import Banner from './components/Banner';
-import Books from './components/Books';
+import Banner from './Banner';
+import Books from './Books';
 
 const Home = () => {
     return (

@@ -1,6 +1,6 @@
 import { data } from 'autoprefixer';
 import React, { useEffect, useState } from 'react';
-import Book from '../../public/Book';
+import Book from './Book';
 
 const Books = () => {
     const [books,setbooks]=useState([])
@@ -11,7 +11,8 @@ const Books = () => {
     },[])
     return (
         <div>
-            <h3 className='text-4xl font-bold text-center'>Books</h3>
+            <h3 className='text-4xl font-bold text-center text-red-400'>Books</h3>
+            
            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
            {
                 books.map(book=><Book book={book} key={book.bookId}></Book>)
